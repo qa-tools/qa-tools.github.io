@@ -6,13 +6,9 @@ layout: default
   <h1 class="page-title">{{ page.title }}</h1>
   {{ content }}
 
-  {% if page.gh-file %}
-    <p class="fork_and_edit">
-      <i class="github_icon"></i>
-      Found a typo ? Something is wrong in this documentation ? Just <a
-            href="https://github.com/aik099/qa-tools/edit/gh-pages/{{ page.gh-file }}">fork
-
-      and edit</a> it !
-    </p>
-  {% endif %}
+  <p class="fork_and_edit">
+    <i class="github_icon"></i>
+    Found a typo ? Something is wrong in this documentation ? Just <a
+        href="https://github.com/aik099/qa-tools/edit/gh-pages/{{ page.path }}">fork and edit</a> it !
+  </p>
 </div>

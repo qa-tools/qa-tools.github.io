@@ -2,7 +2,6 @@
 layout:     page
 title:      BEM
 categories: [api]
-gh-file:    api/03-BEM.md
 ---
 
 ## aik099\QATools\BEM
@@ -17,7 +16,7 @@ But single HTML node (or it's element) can be within different blocks at same ti
 
 ### Class Overview
 
-#### Elements (namespace: `\aik099\QATools\BEM\Element`) 
+#### Elements (namespace: `\aik099\QATools\BEM\Element`)
 
 | Name | Description |
 | ------------- | ------------- |

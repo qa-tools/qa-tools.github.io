@@ -2,7 +2,6 @@
 layout:     page
 title:      PageObject
 categories: [api]
-gh-file:    api/01-PageObject.md
 ---
 
 ## aik099\QATools\PageObject
@@ -12,7 +11,7 @@ Implementation of Page Object pattern as done in Selenium Java library.
 
 ### Class Overview
 
-#### Elements (namespace: `\aik099\QATools\PageObject\Element`) 
+#### Elements (namespace: `\aik099\QATools\PageObject\Element`)
 
 | Name | Description |
 | ------------- | ------------- |

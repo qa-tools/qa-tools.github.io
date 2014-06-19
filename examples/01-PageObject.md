@@ -2,7 +2,6 @@
 layout:     page
 title:      PageObject
 categories: [examples]
-gh-file:    examples/01-PageObject.md
 ---
 
 Page with login box and currency selector.
@@ -88,7 +87,7 @@ class HomePage extends Page {
 		$this->selectByTagName->setValue('EUR');
 
 		$this->inputByName->setValue('another user');
-		
+
 		// Need `getObject` to iterate over current collection in proxy and not a list of collection.
 		foreach ( $this->selectCollection->getObject() as $select ) {
 			$select->selectOption(/* ... */);
