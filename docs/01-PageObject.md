@@ -1,7 +1,7 @@
 ---
 layout:     page
 title:      PageObject
-categories: [api]
+categories: [docs]
 ---
 
 ## aik099\QATools\PageObject

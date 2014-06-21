@@ -25,7 +25,7 @@ Library consist of following 3 parts, which one to use it's up to you:
 * __HtmlElements__ - Solution of the major problem with PageObject implementation (that original library had) - each element had all methods and even ones, that have no effect on element itself. For example a `setValue` method existed for a `H1` tag.
 * __BEM__ - Locating elements on the page according to BEM (block-element-modificator) methodology (http://bem.info/).
 
-Dive into action by looking at [the examples](/examples) or learn more about [the api](/api) first, it's up to you.
+Dive into action by looking at [the examples](/examples), read the [documentation](/docs) or learn more about [the api](/api/master/) first, it's up to you.
 
 ## Required dependencies
 

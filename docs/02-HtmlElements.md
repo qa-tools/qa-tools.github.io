@@ -1,7 +1,7 @@
 ---
 layout:     page
 title:      HtmlElements
-categories: [api]
+categories: [docs]
 ---
 
 ## aik099\QATools\HtmlElements

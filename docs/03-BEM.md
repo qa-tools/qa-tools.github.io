@@ -1,7 +1,7 @@
 ---
 layout:     page
 title:      BEM
-categories: [api]
+categories: [docs]
 ---
 
 ## aik099\QATools\BEM
