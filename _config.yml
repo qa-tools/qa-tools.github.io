@@ -15,7 +15,7 @@ title:            QA-Tools
 tagline:          'Quality assurance utilities for functional tests'
 slogan:           'PHP PageObjects made easy.'
 description:      'Easy-to-use way of interaction with web-page elements in functional tests using PageObject pattern.'
-url:              http://qa-tools.alex-time.com
+url:              http://www.qa-tools.io
 
 exclude:          [vendor, atlassian-ide-plugin.xml, phpunit.xml, composer.lock, node_modules]
 timezone:         Europe/Riga
