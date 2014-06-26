@@ -1,6 +1,7 @@
 ---
 layout:     page
-title:      PageObject
+menu-title: PageObject
+title:      Examples > PageObject
 categories: [examples]
 ---
 

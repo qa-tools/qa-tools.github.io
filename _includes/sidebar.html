@@ -18,7 +18,7 @@
           {% for node in sorted_pages %}
             {% if node.categories contains "examples" %}
               <li class="sidebar-nav-item{% if page.path == node.path %} active{% endif %}">
-                <a href="{{ node.url }}">{{ node.title }}</a>
+                <a href="{{ node.url }}">{{ node.menu-title }}</a>
               </li>
             {% endif %}
           {% endfor %}
@@ -33,7 +33,7 @@
           {% for node in sorted_pages %}
             {% if node.categories contains "docs" %}
               <li class="sidebar-nav-item{% if page.path == node.path %} active{% endif %}">
-                <a href="{{ node.url }}">{{ node.title }}</a>
+                <a href="{{ node.url }}">{{ node.menu-title }}</a>
               </li>
             {% endif %}
           {% endfor %}

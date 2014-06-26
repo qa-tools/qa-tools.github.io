@@ -10,7 +10,7 @@ Please select library part to show examples for:
   {% for node in sorted_pages %}
 	{% if node.categories contains "examples" %}
 	  <li class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">
-		<a href="{{ node.url }}">{{ node.title }}</a>
+		<a href="{{ node.url }}">{{ node.menu-title }}</a>
 	  </li>
 	{% endif %}
   {% endfor %}

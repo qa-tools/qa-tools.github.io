@@ -1,6 +1,7 @@
 ---
 layout:     page
-title:      HtmlElements
+menu-title: HtmlElements
+title:      Examples > HtmlElements
 categories: [examples]
 ---
 

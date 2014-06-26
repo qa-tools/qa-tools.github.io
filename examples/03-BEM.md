@@ -1,6 +1,7 @@
 ---
 layout:     page
-title:      BEM
+menu-title: BEM
+title:      Examples > BEM
 categories: [examples]
 ---
 
