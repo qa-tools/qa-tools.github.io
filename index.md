@@ -39,7 +39,7 @@ Define the dependencies in your ```composer.json```:
 ```json
 {
 	"require": {
-		"aik099/qa-tools": "dev-master",
+		"qa-tools/qa-tools": "dev-master",
 		"mindplay/annotations": "dev-master"
 	}
 }
