@@ -52,11 +52,11 @@ $home_page->examplePageMethod();
 
 ```php
 <?php
-use aik099\QATools\HtmlElements\TypifiedPage;
-use aik099\QATools\PageObject\Element\WebElement;
-use aik099\QATools\HtmlElements\Element\Select;
-use aik099\QATools\HtmlElements\Element\Button;
-use aik099\QATools\HtmlElements\Element\RadioGroup;
+use QATools\QATools\HtmlElements\TypifiedPage;
+use QATools\QATools\PageObject\Element\WebElement;
+use QATools\QATools\HtmlElements\Element\Select;
+use QATools\QATools\HtmlElements\Element\Button;
+use QATools\QATools\HtmlElements\Element\RadioGroup;
 
 /**
  * @page-url('index')
@@ -160,10 +160,10 @@ class HomePage extends TypifiedPage {
 
 ```php
 <?php
-use aik099\QATools\HtmlElements\Element\AbstractElementContainer;
-use aik099\QATools\HtmlElements\Element\TextInput;
-use aik099\QATools\HtmlElements\Element\Button;
-use aik099\QATools\HtmlElements\Element\TextBlock;
+use QATools\QATools\HtmlElements\Element\AbstractElementContainer;
+use QATools\QATools\HtmlElements\Element\TextInput;
+use QATools\QATools\HtmlElements\Element\Button;
+use QATools\QATools\HtmlElements\Element\TextBlock;
 
 /**
  * @element-name('default element name')
@@ -226,7 +226,7 @@ class LoginSidebox extends AbstractElementContainer {
 
 ```php
 <?php
-use aik099\QATools\HtmlElements\Element\AbstractElementContainer;
+use QATools\QATools\HtmlElements\Element\AbstractElementContainer;
 
 /**
  * @find-by('id' => 'block-sidebar')

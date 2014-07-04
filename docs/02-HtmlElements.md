@@ -5,20 +5,20 @@ title:      Documentation > HtmlElements
 categories: [docs]
 ---
 
-## aik099\QATools\HtmlElements
-Depends on `\aik099\QATools\PageObject`.
+## QATools\QATools\HtmlElements
+Depends on `\QATools\QATools\PageObject`.
 
 Solution of the major problem with PageObject implementation (that original library had) - each element had all methods and even ones, that have no effect on element itself. For example a `setValue` method existed for a `H1` tag.
 
 ### Class Overview
 
-#### Elements (namespace: `\aik099\QATools\HtmlElements\Element`)
+#### Elements (namespace: `\QATools\QATools\HtmlElements\Element`)
 
 | Name | Description |
 | ------------- | ------------- |
 | `AbstractTypifiedElement` | Base class for all other elements in this library, that wraps around WebElement and only exposes methods, that are common for all elements. |
 | `AbstractTypifiedElementCollection` | Base class for all other elements in this library, that operate on a group of typified elements. |
-| `AbstractElementContainer` | Base class for creating dedicated classes, that will encapsulate associated elements on a page (typified version of `\aik099\QATools\PageObject\AbstractElementContainer` class). |
+| `AbstractElementContainer` | Base class for creating dedicated classes, that will encapsulate associated elements on a page (typified version of `\QATools\QATools\PageObject\AbstractElementContainer` class). |
 | `LabeledElement` | Element, that has associated LABEL element on a page (e.g. radio button or a checkbox). |
 | `Form` | Form. |
 | `Checkbox` | Checkbox. |
@@ -35,7 +35,7 @@ Solution of the major problem with PageObject implementation (that original libr
 
 | Name | Description |
 | ------------- | ------------- |
-| `\aik099\QATools\HtmlElements\TypifiedPage` | Base class for creating dedicated classes for each of website pages, that needs to be tested. |
+| `\QATools\QATools\HtmlElements\TypifiedPage` | Base class for creating dedicated classes for each of website pages, that needs to be tested. |
 
 ### Annotation Overview
 
@@ -45,7 +45,7 @@ Solution of the major problem with PageObject implementation (that original libr
 
 ### Usage
 
-1. create subclass from `\aik099\QATools\HtmlElements\TypifiedPage` class
+1. create subclass from `\QATools\QATools\HtmlElements\TypifiedPage` class
 2. add class properties, that have any element class from described above in their `@var` annotation
 3. create public method, that would use properties defined before
 

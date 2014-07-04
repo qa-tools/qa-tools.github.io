@@ -5,14 +5,14 @@ title:      Documentation > PageObject
 categories: [docs]
 ---
 
-## aik099\QATools\PageObject
+## QATools\QATools\PageObject
 No internal dependencies.
 
 Implementation of Page Object pattern as done in Selenium Java library.
 
 ### Class Overview
 
-#### Elements (namespace: `\aik099\QATools\PageObject\Element`)
+#### Elements (namespace: `\QATools\QATools\PageObject\Element`)
 
 | Name | Description |
 | ------------- | ------------- |
@@ -24,7 +24,7 @@ Implementation of Page Object pattern as done in Selenium Java library.
 
 | Name | Description |
 | ------------- | ------------- |
-| `\aik099\QATools\PageObject\Page` | Base class for creating dedicated classes for each of the website pages, that needs to be tested (descendant of [DocumentElement](http://mink.behat.org/api/behat/mink/element/documentelement.html)). |
+| `\QATools\QATools\PageObject\Page` | Base class for creating dedicated classes for each of the website pages, that needs to be tested (descendant of [DocumentElement](http://mink.behat.org/api/behat/mink/element/documentelement.html)). |
 
 ### Annotation Overview
 
@@ -35,7 +35,7 @@ Implementation of Page Object pattern as done in Selenium Java library.
 
 ### Usage
 
-1. create subclass from `\aik099\QATools\PageObject\Page` class
+1. create subclass from `\QATools\QATools\PageObject\Page` class
 2. add class properties, that have any element class from described above in their `@var` annotation
 3. create public method(-s), that would use properties defined before
 

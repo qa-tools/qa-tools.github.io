@@ -52,9 +52,9 @@ $home_page->setUsername('example user');
 
 ```php
 <?php
-use aik099\QATools\PageObject\Page;
-use aik099\QATools\PageObject\Element\WebElement;
-use aik099\QATools\PageObject\Element\WebElementCollection;
+use QATools\QATools\PageObject\Page;
+use QATools\QATools\PageObject\Element\WebElement;
+use QATools\QATools\PageObject\Element\WebElementCollection;
 
 /**
  * @page-url('index')
@@ -102,8 +102,8 @@ class HomePage extends Page {
 
 ```php
 <?php
-use aik099\QATools\PageObject\Element\AbstractElementContainer;
-use aik099\QATools\PageObject\Element\WebElement;
+use QATools\QATools\PageObject\Element\AbstractElementContainer;
+use QATools\QATools\PageObject\Element\WebElement;
 
 class LoginSidebox extends AbstractElementContainer {
 
@@ -163,7 +163,7 @@ class LoginSidebox extends AbstractElementContainer {
 
 ```php
 <?php
-use aik099\QATools\PageObject\Element\AbstractElementContainer;
+use QATools\QATools\PageObject\Element\AbstractElementContainer;
 
 /**
  * @find-by('id' => 'block-sidebar')

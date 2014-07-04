@@ -5,8 +5,8 @@ title:      Documentation > BEM
 categories: [docs]
 ---
 
-## aik099\QATools\BEM
-Depends on `aik099\QATools\PageObject`.
+## QATools\QATools\BEM
+Depends on `QATools\QATools\PageObject`.
 
 According to BEM methodology (http://bem.info/) the following restrictions apply:
 
@@ -17,7 +17,7 @@ But single HTML node (or it's element) can be within different blocks at same ti
 
 ### Class Overview
 
-#### Elements (namespace: `\aik099\QATools\BEM\Element`)
+#### Elements (namespace: `\QATools\QATools\BEM\Element`)
 
 | Name | Description |
 | ------------- | ------------- |
@@ -32,9 +32,9 @@ But single HTML node (or it's element) can be within different blocks at same ti
 
 ### Usage
 
-1. create a subclass from `\aik099\QATools\BEM\Element\Block` class to for each block on a page
-2. add class properties, that have `\aik099\QATools\BEM\Element\Element` in their `@var` annotation for each individual element in each block (or alternatively use `$this->getElements` method in the `Block` class)
-3. create subclass from `\aik099\QATools\BEM\BEMPage` class
+1. create a subclass from `\QATools\QATools\BEM\Element\Block` class to for each block on a page
+2. add class properties, that have `\QATools\QATools\BEM\Element\Element` in their `@var` annotation for each individual element in each block (or alternatively use `$this->getElements` method in the `Block` class)
+3. create subclass from `\QATools\QATools\BEM\BEMPage` class
 4. add class property with previously created block subclass name in it's `@var` annotation for each individual block
 
 [Continue to Examples](/examples/03-BEM)

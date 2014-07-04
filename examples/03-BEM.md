@@ -52,8 +52,8 @@ $home_page->examplePageMethod();
 
 ```php
 <?php
-use aik099\QATools\BEM\BEMPage;
-use aik099\QATools\BEM\Element\Element;
+use QATools\QATools\BEM\BEMPage;
+use QATools\QATools\BEM\Element\Element;
 
 /**
  * @page-url('index')
@@ -87,8 +87,8 @@ class HomePage extends BEMPage {
 
 ```php
 <?php
-use aik099\QATools\BEM\Element\Block;
-use aik099\QATools\BEM\Element\Element;
+use QATools\QATools\BEM\Element\Block;
+use QATools\QATools\BEM\Element\Element;
 
 /**
  * @bem('block' => 'b-login')
