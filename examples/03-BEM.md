@@ -39,16 +39,56 @@ On a page there is a sidebar on the left. Inside a sidebar there are multiple si
 
 ## Usage
 
+The Page Factory needs to be created only once per Mink session.
+
+<p class="message">
+    Do not use <code>getPage</code> of the Page Factory which is currently not fully implemented.
+</p>
+
+### Creating Page Factory
+
+No configuration is required to get started.
+
 ```php
 <?php
-$session = new \Behat\Mink\Session(new \Behat\Mink\Driver\Selenium2Driver());
+use Behat\Mink\Driver\Selenium2Driver;
+use Behat\Mink\Session;
+use QATools\QATools\BEM\BEMPageFactory;
 
-$home_page = new HomePage($session);
+$session = new Session(new Selenium2Driver());
+$page_factory = new BEMPageFactory($session);
+
+$home_page = new HomePage($page_factory);
+$home_page->open();
+$home_page->examplePageMethod();
+```
+
+### Creating Page Factory with a Config
+
+Providing a Config and specifying `base_url` enables the usage of relative urls in `@page-url` annotations.
+
+```php
+<?php
+use Behat\Mink\Driver\Selenium2Driver;
+use Behat\Mink\Session;
+use QATools\QATools\BEM\BEMPageFactory;
+use QATools\QATools\PageObject\Config\Config;
+
+$session = new Session(new Selenium2Driver());
+$config = new Config(array(
+	'base_url' => 'http://www.in-portal.com',
+));
+
+$page_factory = new BEMPageFactory($session, $config);
+
+$home_page = new HomePage($page_factory);
 $home_page->open();
 $home_page->examplePageMethod();
 ```
 
 ## Page (class: BEMPage)
+
+### Absolute url in the `@page-url` annotation
 
 ```php
 <?php
@@ -56,7 +96,7 @@ use QATools\QATools\BEM\BEMPage;
 use QATools\QATools\BEM\Element\Element;
 
 /**
- * @page-url('index')
+ * @page-url('http://www.in-portal.com/index.html')
  */
 class HomePage extends BEMPage {
 
@@ -82,6 +122,19 @@ class HomePage extends BEMPage {
 	}
 }
 ```
+
+### Relative url in the `@page-url` annotation
+
+This will only be possible after having specified `base_url` in the config.
+
+```php
+<?php
+/**
+ * @page-url('/index.html')
+ */
+class HomePage extends BEMPage {
+```
+
 
 ## LoginSidebox (class: Block)
 
