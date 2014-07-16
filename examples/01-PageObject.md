@@ -39,16 +39,57 @@ Page with login box and currency selector.
 
 ## Usage
 
+The Page Factory needs to be created only once per Mink session.
+
+<p class="message">
+    Do not use <code>getPage</code> of the Page Factory which is currently not fully implemented.
+</p>
+
+### Creating Page Factory
+
+No configuration is required to get started.
+
 ```php
 <?php
-$session = new \Behat\Mink\Session(new \Behat\Mink\Driver\Selenium2Driver());
+use Behat\Mink\Driver\Selenium2Driver;
+use Behat\Mink\Session;
+use QATools\QATools\PageObject\PageFactory;
 
-$home_page = new HomePage($session);
+$session = new Session(new Selenium2Driver());
+$page_factory = new PageFactory($session);
+
+$home_page = new HomePage($page_factory);
 $home_page->open();
 $home_page->setUsername('example user');
 ```
 
+### Creating Page Factory with a Config
+
+Providing a Config and specifying `base_url` enables the usage of relative urls in `@page-url` annotations.
+
+```php
+<?php
+use Behat\Mink\Driver\Selenium2Driver;
+use Behat\Mink\Session;
+use QATools\QATools\PageObject\Config\Config;
+use QATools\QATools\PageObject\PageFactory;
+
+$session = new Session(new Selenium2Driver());
+$config = new Config(array(
+	'base_url' => 'http://www.in-portal.com',
+));
+
+$page_factory = new PageFactory($session, $config);
+
+$home_page = new HomePage($page_factory);
+$home_page->open();
+$home_page->setUsername('example user');
+```
+
+
 ## Page (class: Page)
+
+### Absolute url in the `@page-url` annotation
 
 ```php
 <?php
@@ -57,7 +98,7 @@ use QATools\QATools\PageObject\Element\WebElement;
 use QATools\QATools\PageObject\Element\WebElementCollection;
 
 /**
- * @page-url('index')
+ * @page-url('http://www.in-portal.com/index.html')
  */
 class HomePage extends Page {
 
@@ -95,6 +136,18 @@ class HomePage extends Page {
 		}
 	}
 }
+```
+
+### Relative url in the `@page-url` annotation
+
+This will only be possible after having specified `base_url` in the config.
+ 
+```php
+<?php
+/**
+ * @page-url('/index.html')
+ */
+class HomePage extends Page {
 ```
 
 
