@@ -41,7 +41,7 @@ On a page there is a sidebar on the left. Inside a sidebar there are multiple si
 
 The Page Factory needs to be created only once per Mink session.
 
-<p class="message">
+<p class="warning">
     Do not use <code>getPage</code> of the Page Factory which is currently not fully implemented.
 </p>
 

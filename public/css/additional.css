@@ -1,0 +1,62 @@
+.note,
+.warning,
+.info {
+	/*border-radius: 6px;*/
+	border-width: 1px;
+	border-style: solid;
+
+	padding: 10px 10px 10px 40px;
+
+	margin: 10px 0;
+}
+
+.note:before,
+.warning:before,
+.info:before {
+	display: block;
+	float: left;
+	margin-left: -30px;
+	margin-top: 2px;
+
+	background-repeat: no-repeat;
+	background-position: top center;
+
+	font-family: FontAwesome;
+
+	width: 20px;
+	height: 18px;
+
+	font-size: 18px;
+
+	text-align: center;
+}
+
+.note {
+	background: #FEEFB3;
+	border-color: #9F6000;
+	color: #9F6000;
+}
+
+.note:before {
+	content: "\f071";
+}
+
+.warning {
+	border-color: #D8000C;
+	color: #D8000C;
+	background: #FFBABA;
+}
+
+.warning:before {
+	content: "\f06a";
+}
+
+.info {
+	border-color: #00529B;
+	color: #00529B;
+	background: #BDE5F8;
+}
+
+.info:before {
+	content: "\f05a";
+}
