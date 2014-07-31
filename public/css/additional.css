@@ -1,9 +1,7 @@
 .note,
 .warning,
 .info {
-	/*border-radius: 6px;*/
-	border-width: 1px;
-	border-style: solid;
+	border-radius: 6px;
 
 	padding: 10px 10px 10px 40px;
 
@@ -18,9 +16,6 @@
 	margin-left: -30px;
 	margin-top: 2px;
 
-	background-repeat: no-repeat;
-	background-position: top center;
-
 	font-family: FontAwesome;
 
 	width: 20px;
@@ -32,9 +27,8 @@
 }
 
 .note {
-	background: #FEEFB3;
-	border-color: #9F6000;
-	color: #9F6000;
+	background: #e6ab0c;
+	color: white;
 }
 
 .note:before {
@@ -42,9 +36,8 @@
 }
 
 .warning {
-	border-color: #D8000C;
-	color: #D8000C;
-	background: #FFBABA;
+	color: white;
+	background: #D8000C;
 }
 
 .warning:before {
@@ -52,9 +45,8 @@
 }
 
 .info {
-	border-color: #00529B;
-	color: #00529B;
-	background: #BDE5F8;
+	color: white;
+	background: #00529B;
 }
 
 .info:before {
