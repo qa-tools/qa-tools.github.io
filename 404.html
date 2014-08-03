@@ -8,3 +8,11 @@ permalink: /404.html
   <h1 class="page-title">404: Page not found</h1>
   <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="/">Head back home</a> to try finding it again.</p>
 </div>
+
+<script>
+  var $current_path = window.location.pathname;
+
+  if ($current_path.match(/^\/api\/(.*?)\/aik099\/(.*)/)) {
+    window.location.replace('/api/' + RegExp.$1 + '/QATools/' + RegExp.$2);
+  }
+</script>
