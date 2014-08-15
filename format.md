@@ -32,6 +32,14 @@ Some text which might me long or short. With followed example PHP code.
     This is some warning message with some embedded code <code>getPage</code> for which we have something to say.
 </p>
 
+<p class="warning round pastel border icon-black">
+    This is some warning message with some embedded code <code>getPage</code> for which we have something to say.
+</p>
+
+<p class="warning pastel border icon-black">
+    This is some warning message with some embedded code <code>getPage</code> for which we have something to say.
+</p>
+
 ```php
 <?php
 
@@ -75,6 +83,14 @@ Now even more text and code
     This is some info message with some embedded code <code>getPage</code> for which we have something to say.
 </p>
 
+<p class="info round pastel border icon-black">
+    This is some info message with some embedded code <code>getPage</code> for which we have something to say.
+</p>
+
+<p class="info pastel border icon-black">
+    This is some info message with some embedded code <code>getPage</code> for which we have something to say.
+</p>
+
 ```php
 <?php
 
@@ -115,6 +131,14 @@ Even more to say.
 </p>
 
 <p class="note pastel border">
+    This is some note message with some embedded code <code>getPage</code> for which we have something to say.
+</p>
+
+<p class="note round pastel border version2 icon-black">
+    This is some note message with some embedded code <code>getPage</code> for which we have something to say.
+</p>
+
+<p class="note pastel border version2 icon-black">
     This is some note message with some embedded code <code>getPage</code> for which we have something to say.
 </p>
 

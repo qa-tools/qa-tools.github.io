@@ -33,9 +33,19 @@
 	text-align: center;
 }
 
+.note.icon-black:before,
+.warning.icon-black:before,
+.info.icon-black:before {
+	color: black;
+}
+
 .note {
 	background: #e6ab0c;
 	color: white;
+}
+
+.note.pastel.version2 {
+	background-color: rgba(255, 255, 0, 0.65);
 }
 
 .note.pastel {
@@ -75,4 +85,16 @@
 
 .info:before {
 	content: "\f05a";
+}
+
+.lead {
+	margin-bottom: 2rem;
+}
+
+.sidebar-nav {
+	margin-bottom: 2rem;
+}
+
+.sidebar a {
+	text-shadow: 1px 1px 1px #408DB5;
 }
