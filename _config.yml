@@ -1,11 +1,12 @@
 # Dependencies
 gems:
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 markdown:         redcarpet
 redcarpet:
     extensions:   ["autolink", "tables"]
-pygments:         true
+highlighter:      pygments
 
 # Permalinks
 permalink:        pretty

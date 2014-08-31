@@ -3,6 +3,7 @@ layout:     page
 menu-title: BEM
 title:      Documentation > BEM
 categories: [docs]
+redirect_from: "/api/03-BEM/"
 ---
 
 ## QATools\QATools\BEM

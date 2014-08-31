@@ -3,6 +3,7 @@ layout:     page
 menu-title: HtmlElements
 title:      Documentation > HtmlElements
 categories: [docs]
+redirect_from: "/api/02-HtmlElements/"
 ---
 
 ## QATools\QATools\HtmlElements
