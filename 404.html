@@ -10,9 +10,27 @@ permalink: /404.html
 </div>
 
 <script>
-  var $current_path = window.location.pathname;
+  (function () {
+    window.onload = function () {
+      var $current_path = window.location.pathname;
 
-  if ($current_path.match(/^\/api\/(.*?)\/aik099\/(.*)/)) {
-    window.location.replace('http://api.qa-tools.io/' + RegExp.$1 + '/QATools/' + RegExp.$2);
-  }
+      if ($current_path.match(/^\/api\/(.*?)\/aik099\/(.*)/)) {
+        redirect_to('http://api.qa-tools.io/' + RegExp.$1 + '/QATools/' + RegExp.$2);
+      }
+    };
+
+    function redirect_to($url) {
+      var $html =
+        '<!DOCTYPE html>\
+        <meta charset=utf-8>\
+        <title>Redirecting...</title>\
+        <link rel=canonical href="{URL}">\
+        <meta http-equiv=refresh content="0; url={URL}">\
+        <h1>Redirecting...</h1>\
+        <a href="{URL}">Click here if you are not redirected.</a>\
+        <script>location=\'{URL}\'<' + '/script>';
+
+      document.write($html.replace(/\{URL}/g, $url));
+    }
+  }());
 </script>
