@@ -1,7 +1,6 @@
 ---
 layout:  page
 title:   Documentation
-redirect_from: "/api/"
 ---
 
 Please select library part to show documentation for:
