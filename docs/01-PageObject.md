@@ -3,7 +3,6 @@ layout:     page
 menu-title: PageObject
 title:      Documentation > PageObject
 categories: [docs]
-redirect_from: "/api/01-PageObject/"
 ---
 
 ## QATools\QATools\PageObject

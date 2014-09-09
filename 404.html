@@ -17,6 +17,9 @@ permalink: /404.html
       if ($current_path.match(/^\/api\/(.*?)\/aik099\/(.*)/)) {
         redirect_to('http://api.qa-tools.io/' + RegExp.$1 + '/QATools/' + RegExp.$2);
       }
+      else if ($current_path.match(/^\/api\/(01-PageObject|02-HtmlElements|03-BEM)\//)) {
+        redirect_to('{{ site.url }}/docs/' + RegExp.$1 + '/');
+      }
       else if ($current_path.match(/^\/api\/(.*)/)) {
         redirect_to('http://api.qa-tools.io/' + RegExp.$1);
       }
