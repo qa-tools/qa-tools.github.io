@@ -41,7 +41,7 @@ Page with login box and currency selector.
 
 The Page Factory needs to be created only once per Mink session.
 
-<p class="message">
+<p class="warning">
     Do not use <code>getPage</code> of the Page Factory which is currently not fully implemented.
 </p>
 
