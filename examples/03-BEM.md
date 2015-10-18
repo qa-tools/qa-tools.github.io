@@ -181,9 +181,9 @@ class LoginSidebox extends Block {
 	 */
 	public function login($username, $password)
 	{
-		$this->username->setValue($username);
-		$this->password->setValue($password);
-		$this->loginButton->click();
+		$this->username->getWrappedElement()->setValue($username);
+		$this->password->getWrappedElement()->setValue($password);
+		$this->loginButton->getWrappedElement()->click();
 
 		return $this;
 	}
@@ -195,7 +195,7 @@ class LoginSidebox extends Block {
 	 */
 	public function getLoginErrorMessage()
 	{
-		return $this->loginErrorMessage->getText();
+		return $this->loginErrorMessage->getWrappedElement()->getText();
 	}
 }
 ```
