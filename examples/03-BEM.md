@@ -104,7 +104,7 @@ class HomePage extends BEMPage {
 	 * Login Sidebox
 	 *
 	 * @var LoginSidebox
-	 * @bem('block' => 'b-login', 'modifier' => array('location' => 'sidebar'))
+	 * @bem('block' => 'b-login', 'modificator' => array('location' => 'sidebar'))
 	 */
 	protected $loginSidebox;
 
@@ -156,7 +156,7 @@ class LoginSidebox extends Block {
 
 	/**
 	 * @var Element
-	 * @bem('element' => 'input-password', 'modifier' => array('color' => 'red'))
+	 * @bem('element' => 'input-password', 'modificator' => array('color' => 'red'))
 	 */
 	protected $password;
 
