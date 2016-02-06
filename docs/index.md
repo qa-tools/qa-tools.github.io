@@ -15,3 +15,5 @@ Please select library part to show documentation for:
 	{% endif %}
   {% endfor %}
 </ul>
+
+The new version of documentation is being created at [http://docs.qa-tools.io](http://docs.qa-tools.io) website.
