@@ -39,4 +39,4 @@ Implementation of Page Object pattern as done in Selenium Java library.
 2. add class properties, that have any element class from described above in their `@var` annotation
 3. create public method(-s), that would use properties defined before
 
-[Continue to Examples](/examples/01-PageObject)
+[Continue to Examples](/examples/)

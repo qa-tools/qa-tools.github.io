@@ -49,4 +49,4 @@ Solution of the major problem with PageObject implementation (that original libr
 2. add class properties, that have any element class from described above in their `@var` annotation
 3. create public method, that would use properties defined before
 
-[Continue to Examples](/examples/02-HtmlElements)
+[Continue to Examples](/examples/)

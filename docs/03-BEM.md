@@ -37,4 +37,4 @@ But single HTML node (or it's element) can be within different blocks at same ti
 3. create subclass from `\QATools\QATools\BEM\BEMPage` class
 4. add class property with previously created block subclass name in it's `@var` annotation for each individual block
 
-[Continue to Examples](/examples/03-BEM)
+[Continue to Examples](/examples/)
