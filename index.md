@@ -36,17 +36,17 @@ Dive into action by looking at [the examples](/examples), read the [documentatio
 
 Define the dependencies in your ```composer.json```:
 
-```json
+{% highlight json %}
 {
-	"require": {
-		"qa-tools/qa-tools": "~1.0"
-	}
+    "require": {
+        "qa-tools/qa-tools": "~1.0"
+    }
 }
-```
+{% endhighlight %}
 
 Install/update your vendors:
 
-```bash
+{% highlight bash %}
 $ curl http://getcomposer.org/installer | php
 $ php composer.phar install
-```
+{% endhighlight %}

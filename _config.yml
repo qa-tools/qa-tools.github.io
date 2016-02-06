@@ -3,10 +3,8 @@ gems:
   - jekyll-sitemap
   - jekyll-redirect-from
 
-markdown:         redcarpet
-redcarpet:
-    extensions:   ["autolink", "tables"]
-highlighter:      pygments
+markdown:         kramdown
+highlighter:      rouge
 
 # Permalinks
 permalink:        pretty
