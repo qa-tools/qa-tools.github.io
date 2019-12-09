@@ -28,4 +28,4 @@ github:
   repo:           https://github.com/qa-tools/qa-tools
 
 api:
-  url:            http://api.qa-tools.io/master/index.html
+  url:            https://qa-tools.github.io/api/master/index.html
