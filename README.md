@@ -1,6 +1,6 @@
 # QA-Tools Website
 
-[![Build Status](https://travis-ci.org/qa-tools/qa-tools.github.io.svg?branch=master)](https://travis-ci.org/qa-tools/qa-tools.github.io)
+[![CI](https://github.com/qa-tools/qa-tools.github.io/actions/workflows/tests.yml/badge.svg)](https://github.com/qa-tools/qa-tools.github.io/actions/workflows/tests.yml)
 
 This is website for QA-Tools project:
 
